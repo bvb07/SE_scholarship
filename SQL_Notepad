@@ -1,0 +1,30 @@
+select * from app_user_login,app_studentinform where app_user_login.user_id = app_studentinform.stdInform_id;
+SELECT * FROM `app_user_login` where refresh_token = 'uLwVjqiqNwwtcaPkaW7RuFbhQoYReB';
+select * from app_studentfile where stdinform_id_id = 1 and checkFileFile = True;
+select * from app_studentfile;
+select * from app_studentfilefile;
+SELECT A.fullname FROM app_user_login A where A.role = "User";
+select * from app_studentfile where studentinform_profile_stdfile = 62;
+select app_studentfile.* from app_studentfile;
+select app_registerscholarship.register_id, 
+    app_registerscholarship.namescholarregister_id , 
+    app_registerscholarship.usermatch_id_id,
+    app_registerscholarship.studentinform_profile_id 
+    from app_registerscholarship;
+SELECT * FROM app_studentfile WHERE studentinform_profile_stdfile = %d;
+select * from app_studentfile A inner join app_studentfilefile B on A.studentinform_profile_stdfile = B.file_id_id;
+select * from app_studentfile A , app_studentfilefile B , app_studentinform C WHERE A.studentinform_profile_stdfile = B.file_id_id and A.stdinform_id_id = C.stdInform_id_id;
+SELECT * from app_studentfilefile S where S.file_id_id;
+SELECT * FROM app_weightcriteriapoint D WHERE D.managescho_id_id; 
+SELECT DISTINCT A.* ,B.fullName_Std_reg ,B.id_Std_reg from app_registerscholarship A inner join app_studentfile B on A.usermatch_id_id = B.stdinform_id_id where B.stdinform_id_id = 1;
+SELECT DISTINCT A.* ,B.fullName_Std_reg ,B.id_Std_reg ,C.nameScholar from app_registerscholarship A inner join app_studentfile B on A.usermatch_id_id = B.stdinform_id_id inner join app_managescholarship C on C.managescho_id = A.namescholarregister_id where B.stdinform_id_id = 6;
+select DISTINCT * from app_studentfile A , app_studentinform C WHERE A.stdinform_id_id = C.stdInform_id_id and A.studentinform_profile_stdfile = 49;
+SELECT DISTINCT A.*,B.fullName_Std_reg,B.id_Std_reg,B.major_Std_reg from app_registerscholarship A ,app_studentfile B where A.studentinform_profile_id = 49;
+SELECT DISTINCT A.*,B.fullName_Std_reg,B.id_Std_reg,B.major_Std_reg from app_registerscholarship A inner join app_studentfile B on A.studentinform_profile_id=B.studentinform_profile_stdfile where A.studentinform_profile_id = 49;
+select DISTINCT A.*,C.*,B.register_id from app_studentfile A , app_studentinform C , app_registerscholarship B WHERE A.stdinform_id_id = C.stdInform_id_id and A.studentinform_profile_stdfile = B.studentinform_profile_id and A.studentinform_profile_stdfile = 49;
+SELECT DISTINCT A.*,B.fullName_Std_reg,B.id_Std_reg,B.major_Std_reg,C.nameScholar from app_registerscholarship A inner join app_studentfile B on A.studentinform_profile_id=B.studentinform_profile_stdfile inner join app_managescholarship C on A.namescholarregister_id = C.managescho_id where A.register_id = 2026;
+SELECT DISTINCT A.* ,B.fullName_Std_reg ,B.id_Std_reg ,C.statusScholar,C.nameScholar,C.srcYear_id from app_registerscholarship A inner join app_studentfile B on A.usermatch_id_id = B.stdinform_id_id inner join app_managescholarship C on C.managescho_id = A.namescholarregister_id where B.stdinform_id_id = 6;
+SELECT A.*,avg(A.pointbycommitee) AS totalpoint FROM app_commiteevote A where managescholarship_id_id = 10 GROUP BY A.managescholarship_id_id,A.registerscholarship_id_id;
+
+
+

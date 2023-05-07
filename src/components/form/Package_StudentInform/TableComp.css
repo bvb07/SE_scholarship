@@ -1,0 +1,105 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 0px;
+  width:82.5%;
+  height: 50%;
+}
+
+div.tableform{
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: rgb(214, 214, 214);
+  width: 1200px ;
+
+}
+form.tableform{
+  display: flex;
+  gap: 5px;
+  font-size: 20px; 
+  margin-left: -100px; 
+  width: 1200px;
+}
+
+table.tableform {
+  border-collapse: collapse;
+  width: 1200px;
+}
+
+th.tableform {
+  background-color: #A83B3B;
+  font-size: 20px;
+
+}
+
+td.tableform {
+  background-color: rgb(214, 214, 214);
+  font-size: 20px;
+}
+tr.tableform {
+  background-color: rgb(214, 214, 214);
+  width: 1000px;
+  font-size: 20px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.threeButton{
+  margin-top:0%;
+  width: 350px;
+  height: 60px;
+  
+}
+.editAndDelete{
+  width: 100%;
+  border-left: none;
+  height: 50px;
+}
+
+.buttonbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 370px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+input.tableform{
+  font-size: 20px;
+  height: 35px;
+  width: 230px;
+  border: none;
+
+}
+
+.btn{
+  width: 95px;
+  height: 60px;
+  font-size: 20px;
+  text-align: center;
+} 
+.textform{
+  display: flex;
+  flex-direction: row;
+  background-color: #A83B3B;
+  width:1200px;
+  height: 80px;
+  margin-left: -100px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.textform-side{
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+
+}
+.tableform-btn{
+  margin-top: -10px;
+}

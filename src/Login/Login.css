@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+}
+
+.App-container {
+  display: flex;
+  flex-direction: "row";
+  /**background: red;**/
+  height: 100vh;
+  width: auto;
+}
+/**---------- (zone1,2) --------------**/
+.zone1{
+  width: 70%;
+  height: 100vh;
+  /**background: rgb(255, 255, 255);**/
+}
+.zone2{
+  width: 30%;
+  height: 100vh;
+  /**background: rgb(255, 255, 255);**/
+}
+/**------+++++++++++++++++++++---------**/
+
+/**---------- (Area1) --------------**/
+.area1text{
+  width: 100%;
+  height: 30vh;
+  background: rgb(255, 255, 255);
+}
+.area1img{
+  width: 100%;
+  height: 70vh;
+  background: rgb(255, 255, 255);
+}
+/**------++++++++++++++++++++++++------**/
+
+/**---------- (Area2) --------------**/
+.area2logo{
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  background: #661b13;
+  justify-content: center;
+  
+}
+.area2login{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background: #661b13;
+  justify-content: center;
+}
+.area2next{
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  background-color: #661b13;
+  justify-content: center;
+}
+
+/**------++++++++++++++++++++++++------**/
+
+/**------- (fonttext, logopic => zone1) ----------**/
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 40px;
+}
+.logo-picture{
+  width: 70%;
+  height: 100%;
+}
+/**---------+++++++++++++++------------**/
+
+/**------- (fonttext, logopic => zone2) ----------**/
+label{
+  color: white;
+}
+input{  
+  border-radius: 10px;
+}
+
+.buttonlogin{
+  border-radius: 10px;
+  width: 80px;
+  color: white;
+  background-color: gray;
+}
+.box2logo{
+  width: 50%;
+  height: 100%;
+  /**background: rgb(206, 148, 148);**/
+}
+.logo-ku{
+  width: 100%;
+  height: 100%;
+
+}
+.button_text{
+  margin-top: 10px;
+  font-size: 15px;
+}
+/**---------+++++++++++++++------------**/
+
+/**--------- (Login bar) --------------**/
+
+.box2login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 40%;
+  /**background: green;**/
+  margin-top:20px;
+  padding: 20px;
+}
+
+/**----+++++++++++++++++++-------**/
+
+/**-------- () ------------**/
+
+.box2next{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 90%;
+  margin-bottom: 50%;
+  /**background: green;**/
+}
+
+.cpage{
+  display: flex;
+  flex-direction: "row";
+  justify-content: center;
+  margin-left: 40px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+
+}
+
+.logo-house{
+  width: 40px;
+  height: 40px;
+}
+.logo-admin{
+  width: 30px;
+  height: 30px;
+}
+
+.logo-kummakarn{
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+
+
+

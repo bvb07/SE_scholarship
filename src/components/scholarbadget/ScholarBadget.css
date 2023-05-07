@@ -1,0 +1,35 @@
+div.c1{
+    
+    width: 1500px;
+}
+.accordion-header{
+    padding-bottom: 5px;
+}
+.accordion-button{
+    background-color: #A83B3B;
+    color: white;
+
+}
+.accordion-button:hover{
+    background-color: rgb(34, 34, 34);
+    color: white;
+
+}
+.accordion-button:active{
+    background-color: rgb(34, 34, 34);
+    color: white;
+
+}
+.accordion-collapse{
+    background-color: rgb(190, 190, 190);
+    color: rgb(0, 0, 0);
+}
+.accordion-topic{
+    display: flex;
+    font-size: 23px;
+    justify-content: space-between;
+}
+p.detail{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}

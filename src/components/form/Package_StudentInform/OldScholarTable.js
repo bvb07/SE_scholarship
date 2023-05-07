@@ -1,0 +1,242 @@
+import React from 'react'
+import { useState, Fragment ,useEffect} from "react";
+import "./TableComp.css";
+import data from "./mock-datatua2.json";
+import { Routes,Route,BrowserRouter,Link } from 'react-router-dom'
+
+
+const EditableRow = ({
+  editFormData,
+  handleEditFormChange,
+  handleCancelClick,
+}) => {
+  return (
+    <tr>
+      <td className="tableform">
+        <input className="tableform"
+          type="text"
+          required="required"
+          placeholder="Enter a Schoolyear..."
+          name="schoolyear"
+          value={editFormData.schoolyear}
+          onChange={handleEditFormChange}
+        ></input>
+      </td>
+      <td className="tableform">
+        <input className="tableform"
+          type="text"
+          required="required"
+          placeholder="Enter an Scholarship..."
+          name="scholarship"
+          value={editFormData.scholarship}
+          onChange={handleEditFormChange}
+        ></input>
+      </td>
+      <td className="tableform">
+        <input className="tableform"
+          type="text"
+          required="required"
+          placeholder="Enter an Cost..."
+          name="cost"
+          value={editFormData.cost}
+          onChange={handleEditFormChange}
+        ></input>
+      </td>
+      <td className="tableform">
+        <button type="submit" class="btn btn-success">บันทึก</button>
+        <button type="button" class="btn btn-danger" onClick={handleCancelClick}>ยกเลิก </button>
+      </td>
+      
+    </tr>
+  );
+};
+
+const ReadOnlyRow = ({ contact, handleEditClick, handleDeleteClick }) => {
+  return (
+    <tr>
+      <td className="tableform">{contact.schoolyear}</td>
+      <td className="tableform">{contact.scholarship}</td>
+      <td className="tableform">{contact.cost}</td>
+      <td className="tableform">
+        <button type="button" class="btn btn-warning" onClick={(event) => handleEditClick(event, contact)}>แก้ไข</button>
+        <button type="button" class="btn btn-danger" onClick={() => handleDeleteClick(contact.id)}>ลบ</button>
+      </td>
+    </tr>
+  );
+}
+
+function OldScholarTable(){
+  const [contacts, setContacts] = useState(data);
+  const [addFormData, setAddFormData] = useState({
+    id:"",
+    schoolyear: "",
+    scholarship: "",
+    cost:"",
+  });
+  const [editFormData, setEditFormData] = useState({
+    id:"",
+    schoolyear: "",
+    scholarship: "",
+    cost:"",
+  });
+
+  const [editContactId, setEditContactId] = useState(null);
+
+  const handleAddFormChange = (event) => {
+    event.preventDefault();
+
+    const fieldName = event.target.getAttribute("name");
+    const fieldValue = event.target.value;
+
+    const newFormData = { ...addFormData };
+    newFormData[fieldName] = fieldValue;
+
+
+    setAddFormData(newFormData);
+  };
+
+  const handleEditFormChange = (event) => {
+    event.preventDefault();
+
+    const fieldName = event.target.getAttribute("name");
+    const fieldValue = event.target.value;
+
+    const newFormData = { ...editFormData };
+    newFormData[fieldName] = fieldValue;
+
+    setEditFormData(newFormData);
+  };
+
+  const handleAddFormSubmit = (event) => {
+    event.preventDefault();
+
+    const newContact = {
+      //id: nanoid(),
+      schoolyear: addFormData.schoolyear,
+      scholarship: addFormData.scholarship,
+      cost: addFormData.cost,
+    };
+
+    const newContacts = [...contacts, newContact];
+    setContacts(newContacts);
+  };
+
+  const handleEditFormSubmit = (event) => {
+    event.preventDefault();
+
+    const editedContact = {
+      id: editContactId,
+      schoolyear: editFormData.schoolyear,
+      scholarship: editFormData.scholarship,
+      cost: editFormData.cost,
+    };
+
+    const newContacts = [...contacts];
+
+    const index = contacts.findIndex((contact) => contact.id === editContactId);
+
+    newContacts[index] = editedContact;
+
+    setContacts(newContacts);
+    setEditContactId(null);
+  };
+
+  const handleEditClick = (event, contact) => {
+    event.preventDefault();
+    setEditContactId(contact.id);
+
+    const formValues = {
+      schoolyear: contact.schoolyear,
+      scholarship: contact.scholarship,
+      cost: contact.cost
+    };
+
+    setEditFormData(formValues);
+  };
+
+  const handleCancelClick = () => {
+    setEditContactId(null);
+  };
+
+  const handleDeleteClick = (contactId) => {
+    const newContacts = [...contacts];
+
+    const index = contacts.findIndex((contact) => contact.id === contactId);
+
+    newContacts.splice(index, 1);
+
+    setContacts(newContacts);
+  };
+  const PrintSubmit = () => {
+    //console.log(contacts);
+  }
+  return (
+    <div className="table-container">
+      <form className="tableform" onSubmit={handleEditFormSubmit}>
+        <table className="tableform">
+          <thead>
+            <tr>
+              <th className="tableform">ปีการศึกษา</th>
+              <th className="tableform">ชื่อทุนการศึกษา</th>
+              <th className="tableform">มูลค่าทุนละ</th>
+              <th className="tableform">แก้ไข/ลบ</th>
+            </tr>
+          </thead>
+          <tbody>
+            {contacts.map((contact) => (
+              <Fragment>
+                {editContactId === contact.id ? (
+                  <EditableRow
+                    editFormData={editFormData}
+                    handleEditFormChange={handleEditFormChange}
+                    handleCancelClick={handleCancelClick}
+                  />
+                ) : (
+                  <ReadOnlyRow
+                    contact={contact}
+                    handleEditClick={handleEditClick}
+                    handleDeleteClick={handleDeleteClick}
+                  />
+                )}
+              </Fragment>
+            ))}
+          </tbody>
+        </table>
+      </form>
+
+      <form className="textform" onSubmit={handleAddFormSubmit}>
+          <label for="explicit-label-name" className='labelinput'>เพิ่มรายชื่อทุน</label> 
+          <input className="tableform"
+            type="text"
+            name="schoolyear"
+            required="required"
+            placeholder="กรอกชื่อ (มีคำนำหน้า)..."
+            onChange={handleAddFormChange}
+          />
+          <input className="tableform"
+            type="text"
+            name="scholarship"
+            required="required"
+            placeholder="กรอกระดับการศึกษา..."
+            onChange={handleAddFormChange}
+          />
+          <input className="tableform"
+            type="text"
+            name="cost"
+            required="required"
+            placeholder="กรอกอาชีพ..."
+            onChange={handleAddFormChange}
+          />
+          <div class="tableform-btn">
+          <button type="submit" class="btn btn-success">เพิ่ม</button>
+          </div>
+        </form> 
+
+    {/*></><button class="btn btn-success" onClick={() => PrintSubmit()}>ส่ง</button>*/}
+  </div>
+  );
+  
+}
+
+
+export default OldScholarTable;

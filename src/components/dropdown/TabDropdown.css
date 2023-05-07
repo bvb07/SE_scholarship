@@ -1,0 +1,23 @@
+.dropdown_bar{
+    display: flex;
+    flex-direction: row;
+    width:auto;
+}
+.dropdown_selector{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 15px;
+}  
+.dropdown_list{
+    width: 150px;
+    height: 10px;
+    margin-left: -30px;
+}
+.dropdown_control{
+    color: white;
+    background-color:  #A83B3B;
+    width: auto;
+    font-size: 30px;
+  }

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+*{
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+}
+
+/* ========= Image with Label =========*/
+.containerNew{
+    display: flex;
+    flex-direction: column;
+    margin-left: 270px;
+    margin-top: -40px;
+    width: 1200px;
+    height: 100%;
+}
+    .layout-1{
+        display: flex;
+        flex-direction: column;
+        width: 1250px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+        .header-l1{
+            display: flex;
+            width: 100%;
+            background-color: #661B13;
+            padding-left: 10px;
+        }
+        .body-l1{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            padding-left: 20px;
+        }
+        .footer-l1{
+            display: flex;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            padding-left: 10px;
+        }
+
+    .layout-2{
+        display: flex;
+        flex-direction: column;
+        width: 1250px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+        .header-l2{
+            display: flex;
+            width: 100%;
+            background-color:  rgb(255, 255, 255);
+            padding-left: 10px;
+         
+        }
+        .body-l2{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            padding-left: 20px;
+        }
+            .body-l2-left{
+                display: flex;
+                flex-direction: column;
+                width: 600px;
+                background-color: rgb(255, 255, 255);
+            }
+            .body-l2-right{
+                display: flex;
+                flex-direction: column;
+                width: 600px;
+                background-color: rgb(255, 255, 255);
+            }
+        .footer-l2{
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            padding-left: 10px;
+        }
+        .footer-l2-center{
+            display: flex;
+            margin-top: 10px;
+            margin-left: 40%;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .footer-l2-right{
+            display: flex;
+            margin-top: 10px;
+            margin-left: 80%;
+            background-color: rgb(229, 255, 0);
+            padding-left: 10px;
+        }
+        
+        
+        
+/* ========= Image with Label =========
+Used for Contact*/
+.imglb-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start; 
+    width: auto;
+    height: 120px;
+}
+    .imglb-row-img{
+        width:100px;
+        height:100px;
+    }
+    .imglb-row-lb{
+        width: auto;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+/* ====== Button ไว้ใช้วางปุ่ม next prev======*/
+.next-prevbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-left: -500px;
+    width: 700px;
+}  
+/* ====== Form Control======
+    
+
+*/
+
+/* 
+ตอนนี้ใช้ในหน้า AddScholarship
+
+
+*/
+.inputlb01_add_scholarship{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 30px;
+    
+}
+
+/* ============ Register*/
+
+.topic_sc-row{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+}
+.topic_sc-col{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+.topic-row{
+    display: flex;
+    flex-direction: row;
+}
+.topic-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.illution{
+    /*font-size: 0.75rem;*/
+    font-size: 20px;
+}
+
+.fs{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

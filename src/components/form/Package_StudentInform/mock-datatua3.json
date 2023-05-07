@@ -1,0 +1,19 @@
+[
+    {
+      "id" : 1,
+      "fileName" : "ใบเกรด",
+      "fileType" : "jpg , png ,pdf"
+     
+    },
+    {
+      "id" : 2,
+      "fileName" : "ทะเบียน",
+      "fileType" : "jpg , png ,pdf"
+     
+    },
+    {
+      "id" : 3,
+      "fileName" : "ทะเบียน",
+      "fileType" : "jpg , png ,pdf"
+    }
+ ]

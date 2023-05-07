@@ -1,0 +1,40 @@
+.card1 {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 0.2rem;
+    text-align: left;
+    background-color: #A83B3B;
+    color: #ffffff;
+    width: 1000px;
+    height: 100px;
+    line-height: 3em;
+    
+    
+}
+.card2 {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #A83B3B;
+    color: #ffffff;
+    height: 90px;  
+}
+.card2:hover {
+    background-color: #3d3939;
+    color: #ffffff;
+    height: 90px; 
+}
+.bu{
+    width: 150px;
+}
+.fff2{
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+}
+.cc2{
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 0.2rem;
+    text-align: left;
+    background-color: #A83B3B;
+    color: #ffffff;
+    width: 900px;
+    height: 100px;
+    line-height: 3em;
+}

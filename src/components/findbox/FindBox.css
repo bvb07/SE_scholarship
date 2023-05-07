@@ -1,0 +1,39 @@
+
+.findbox_bar{
+    display: flex;
+    flex-direction: row;
+    width:auto;
+   
+}
+.form_control{
+    font-size: 20px;
+    height: auto;
+    width:auto;
+}
+.findbox_selector{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    width: auto;
+    margin-left: -350px;
+    margin-top: -40px;
+    
+}  
+.findbox_control{
+    font-size: 18px;
+    width: 600px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+
+.findbox_table_th{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    width: 600px;
+}
+.findbox_td{
+    width: 600px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    
+}

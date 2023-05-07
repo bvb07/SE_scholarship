@@ -1,0 +1,196 @@
+.stacolor{
+    background-color: #3f3d3d;
+    color: rgb(255, 255, 255);
+}
+/* .header-l2{
+    background: rgb(190, 190, 190);
+} */
+.circle-gray{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: rgb(133, 128, 129)
+}
+
+.circle-green {
+    width: 100px;   
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: rgb(20, 116, 87)
+}
+.smallcircle-green {
+    width: 50px;   
+    height: 50px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background: rgb(20, 116, 87)
+}
+
+.circle-yellow{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: rgb(251, 255, 0)
+}
+
+.circle-crimson{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: #661B13
+}
+
+
+.circle-mini-crimson {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: #661B13;
+    font-size: 20px;
+}
+
+.circle-mini-gray{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: rgb(133, 128, 129);
+    font-size: 20px;
+}
+
+.circle-mini-green {
+    width: 50px;   
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: rgb(20, 116, 87);
+    font-size: 20px;
+
+    
+}
+
+.circle-mini-yellow{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: rgb(239, 143, 0);
+    font-size: 20px;
+}
+.circle-mini-red {
+    width: 50px;   
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: rgb(177, 0, 0);
+    font-size: 20px;
+
+    
+}
+
+.circle-mini-magenta{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: #6F079F;
+    font-size: 20px;
+}
+
+.circle-red {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: rgb(177, 0, 0)
+}
+
+.front-status{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.circle-green2 {
+    width: 50px;   
+    height: 50px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: rgb(20, 116, 87)
+}
+
+.circle-yellow2{
+    width: 50px;
+    height: 50px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: rgb(239, 143, 0)
+}
+
+.circle-yellow3{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    background: rgb(239, 143, 0)
+}
+
+.circle-red2 {
+    width: 50px;
+    height: 50px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: rgb(177, 0, 0)
+}
